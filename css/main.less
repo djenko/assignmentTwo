@@ -1,0 +1,235 @@
+ 
+ /*********************** IMPORTS *****************************/
+ 
+ @import 'grid.less';
+ @import 'mixins.less';
+ @import 'variables.less';
+ 
+ 
+ /*********************** GLOBAL *****************************/
+ 
+ body {
+ 	.bodyfontstyle;
+  	max-width: 1080px;
+ 	margin: 0 auto;
+ 	background-color: #141414;
+ 	h1 {
+ 	 	color: @darkgrey;
+ 	 	.h1style;
+ 	}
+ 	h2 {
+ 		.h2style;
+ 	}
+ 	h3 {
+ 		.h3style;
+ 	}
+ 
+ 	h4 {
+ 		.h4style;
+ 	}
+ }
+ 
+ 
+ /*********************** HEADER/NAV *****************************/
+ 
+ header {
+ 	background-color: @darkergrey;
+ 	max-width: 100%;
+ 	height: 45px;
+ }
+ 
+ nav {
+ padding-top:15px;
+  position: relative;
+  z-index: 1;
+  .column(4);
+ 	ul {
+ 	 text-align: center;
+ 	 list-style-type:none;
+ 		li {
+ 		 display: inline;
+ 		 margin-right: 10px;
+ 			a {
+ 			  .navbuttons;
+ 				&:hover {
+ 					color: @emerald;
+ 					background-color:;
+ 				}
+ 			}
+ 		}
+ 	}
+ }
+ 
+ 
+ .tour_message {
+  padding-top: 12px;
+  font-family: 'century gothic';
+  .column(5);
+  float: left;
+ 	h4 {
+ 		margin: 2px 0 0 35px;
+ 		.colourChange {
+ 		 color: @cloudywhite;
+ 		}
+ 	}
+ 
+ }
+ 
+ .social_media {
+  float:right;
+ 	ul {
+ 	 list-style-type: none;
+ 		li {
+ 		 display: inline;
+ 			a {
+ 				&:hover {
+ 
+ 				}
+ 			}
+ 		}
+ 	}
+ }
+ 
+ .hero {
+ 	.column(12);
+ 	text-align: center;
+ 	margin-top:60px;
+ 	background-color:#141414;
+ 	height: 250px;
+ }
+ 
+ 
+ /*********************** HOME (NEWS + TOUR) *****************************/
+ 
+ .home_section {
+ 	height: 455px;
+ 	.column(12);
+ }
+ 
+ 
+ /*********************** NEWS *****************************/
+ 
+ .news_top_bar {
+ 	.topbar;
+ 		h1 {
+ 			.h1style;
+ 		}
+ }
+ 
+ .news_section {
+ 	.ulLiStyle;
+ 	ul {
+ 		.column(3);
+ 		
+ 	}
+ }
+ 
+ 
+ .news_display {
+ 	background-color: #408c7b;
+ 	.column(5);
+ 	height: 417px;
+ 	
+ 
+ 	section {
+ 		margin-bottom: 20px;
+ 		header {
+ 			background-color: @green;
+ 			h2 {
+ 				.h2style;
+ 				padding: 5px 0 0 5px;
+ 			}
+ 
+ 			h3 {
+ 				.h3style;
+ 				padding: 5px 0 0 5px;
+ 			}
+ 		}
+ 		p {
+ 			margin: 10px 5px 0 5px;
+ 		}
+ 	}
+ }
+ 
+ 
+ /*********************** TOUR *****************************/
+ 
+ .tour_top_bar {
+ 	.topbar;
+ 	float:left;
+ 	width: 132px;
+ }
+  
+ .tour {
+ 	.column(4);
+ 	background-color: #367667;
+ 	height: 417px;
+ 	.ulLiStyle;
+ 		h1 {
+ 			.h1style;
+ 		}
+ 		ul {
+ 			li {
+ 				&:first-child {
+ 	 			background-color: @green;
+ 	 			padding: 10px 0 10px 0;
+ 	 			text-align: center;
+ 	 			font-size: 18px;
+ 			}
+ 
+ 		}
+ 	
+ 	}
+ }
+ 
+ 
+ /*********************** ABOUT/BIO *****************************/
+ 
+ #about_section {
+ 	background-image:url(../images/donald.jpg);
+ 	background-size: cover;
+ 	.column(12);
+ 	margin-top:60px;
+ 	height:500px;
+ 	
+ 	background-color: #363636;
+ 		h1 {
+ 			text-align: center;
+ 			.h1style;
+ 			margin-top: 20px;
+ 		}
+ }
+ 
+ .bio {
+ 	opacity: 0.7;
+ 	.column(5);
+ 	background-color: black;
+ 	height:290px;
+ 
+ 	h1 {
+ 		.h1style;
+ 		background-color: @pink;
+ 		padding: 5px 0 5px 0;
+ 	}
+ 
+ 	p {
+ 		margin: 20px 5px 0 5px;
+ 		color: white;
+ 	}
+ }
+ 
+ 
+ /*********************** FOOTER *****************************/
+ 
+ footer {
+ 	.column(12);
+ 	margin-top:50px;
+ 	background-color: @darkergrey;
+ 	height:50px;
+ 
+ 	h1 {
+ 		.h1style;
+ 		margin-top: 20px;
+ 		text-align: center;
+ 	}
+ } 
